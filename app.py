@@ -63,8 +63,6 @@ def main():
         expense_recorder()
     elif selected_page == 'Total Expenses':
         total_expenses()
-    elif selected_page == 'Clear Data':
-        clear_data()
 
 if __name__ == '__main__':
     main()
