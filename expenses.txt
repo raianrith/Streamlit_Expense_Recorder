@@ -1,0 +1,3 @@
+ss: $0.00566
+a: $0.003
+Date: 2023-11-26, Store: S, Category: d, Amount: $0.0044
