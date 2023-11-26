@@ -57,7 +57,7 @@ def total_expenses():
 
 def main():
     st.sidebar.title('Navigation')
-    selected_page = st.sidebar.radio("Go to", ['Expense Recorder', 'Total Expenses', 'Clear Data'])
+    selected_page = st.sidebar.radio("Go to", ['Expense Recorder', 'Total Expenses'])
 
     if selected_page == 'Expense Recorder':
         expense_recorder()
