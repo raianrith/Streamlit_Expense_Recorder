@@ -4,6 +4,8 @@ import plotly.express as px
 import os
 import base64
 
+import csv
+
 def expense_recorder():
     st.title('Expense Recorder')
 
@@ -18,9 +20,11 @@ def expense_recorder():
     notes = st.text_area("Notes:", "")
 
     if st.button("Record Expense"):
-        with open('expenses.csv', 'a') as file:
-            file.write(f"{date},{store},{category},{amount},{notes}\n")
+        with open('expenses.csv', 'a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([date, store, category, amount, notes])
         st.success("Expense recorded successfully!")
+
 
 
 def total_expenses():
